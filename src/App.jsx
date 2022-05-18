@@ -2,6 +2,7 @@ import './App.css';
 import Card from './Card';
 import React, {useState} from 'react';
 import Data from './Data';
+import Todo from './Todo';
 
 
 export default function App() {
@@ -9,7 +10,7 @@ export default function App() {
 
   return (
     <div className="App"> 
-      <nav>
+      {/* <nav>
         <button onClick={() => setActive("firstcard") }>One</button>
         <button onClick={() => setActive("secondcard") }>two</button>
         <button onClick={() => setActive("thirstcard") }>three</button>
@@ -19,9 +20,10 @@ export default function App() {
         {active === "firstcard" && <Card data={Data} cardIndex={0} /> }
         {active === "secondcard" && <Card data={Data} cardIndex={1} /> }
         {active === "thirstcard" && <Card data={Data} cardIndex={2} /> }
-      </div>
+      </div> */}
+      
+          <Todo />
     </div>
-
    
   );
 }
